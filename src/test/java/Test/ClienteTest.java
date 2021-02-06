@@ -25,6 +25,13 @@ public class ClienteTest {
 	}
 	
 	@Test
+	public void loginNuloException() {
+		Assertions.assertThrows(NullPointerException.class, ()->{
+			Cliente cliente = service.criarCliente(null);
+		});
+	}
+	
+	@Test
 	public void loginAcima20CaracteresException() {
 		Assertions.assertThrows(IllegalArgumentException.class, ()->{
 			String login = "josemariadoamaralsilva";
