@@ -7,7 +7,7 @@ import com.desafio.model.Cliente;
 
 public class ClienteRepository {
 
-	private Map<String,Cliente> clienteRepository = new HashMap<String,Usuario>();
+	private Map<String,Cliente> clienteRepository = new HashMap<String,Cliente>();
 	public ClienteRepository() {
 		clienteRepository.put("gso", new Cliente());
 	}
